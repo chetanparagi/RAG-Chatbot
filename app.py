@@ -48,7 +48,7 @@ def read_txt(file) -> str:
 def get_gemini_response(prompt: str, document_content: Optional[str] = None, chat_history: list = None) -> str:
     """Get response from Gemini model with conversation history"""
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash') # change to your preferred model
+        model = genai.GenerativeModel('gemini-1.5-pro-latest') # change to your preferred model
         
         # Build conversation context
         conversation_context = ""
